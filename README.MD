@@ -14,14 +14,14 @@ This repository contains the source code for a smart bracelet project based on t
   - **Temperature LED (Green)**: Connect the green LED to pin `21` for temperature indication.
   - **Humidity LED (Red)**: Connect the red LED to pin `22` for humidity indication.
 - **Buttons**:
-  - **Temperature Button**: Connect a button to pin `19`. Pressing this button will display the temperature reading.
-  - **Humidity Button**: Connect another button to pin `12`. Pressing this button will display the humidity reading.
+  - **Temperature Button**: Connect a button to pin `19`. Pressing this button will initiate the temperature display process.
+  - **Humidity Button**: Connect another button to pin `12`. Pressing this button will initiate the humidity display process.
 
 ## How It Works
 
 - The DHT11 sensor periodically measures the temperature and humidity.
-- Press the **Temperature Button** to blink the green LED. The number of blinks represents the temperature value. For example, 23 blinks for 23°C.
-- Press the **Humidity Button** to blink the red LED. The number of blinks represents the humidity percentage. For example, 60 blinks for 60% RH.
+- Press the **Temperature Button** to display the temperature reading through the green LED. The LED will blink in a pattern representing the temperature value. For example, for a temperature of 23°C, the LED will blink 2 times, pause, and then blink 3 times.
+- Press the **Humidity Button** to display the humidity reading through the red LED. The LED will blink in a pattern representing the humidity percentage. For example, for 60% RH, the LED will blink 6 times, pause, and then blink 0 times.
 
 ## Contributing
 
